@@ -1,0 +1,33 @@
+#inner-header {
+
+	#logo {
+		//float: left;
+		text-align: center;
+	}
+
+	nav {
+		float: right;
+		margin: 2em 0;
+		display: none;
+		transition: all 0.25s ease-in-out;
+	}
+}
+
+.menuTop {
+	position: fixed;
+	width: 100%;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,.4);
+
+	#logo {
+		margin: 0;
+	}
+
+	.description {
+		margin: 0 ;
+	}
+
+	#inner-header nav {
+		margin: 0;
+	}
+
+}

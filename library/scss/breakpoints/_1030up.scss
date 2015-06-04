@@ -1,0 +1,41 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Desktop Stylsheet
+
+This is the desktop size. It's larger than an iPad so it will only
+be seen on the Desktop.
+
+******************************************************************/
+
+#inner-header {
+
+	#logo {
+		float: left;
+		text-align: left;
+		//margin: 0.9em 0;
+	}
+
+	nav {
+		float: right;
+		margin: 2em 0;
+	}
+}
+
+
+.description {
+	margin: 2em 0;
+	padding-left: 15px;
+	display: none;
+	float: left;
+}
+
+
+.fixlocal, .history-line, .post-img {
+	display: block;
+}
+
+.post-type-archive-history .type-history:nth-child(odd) {
+	margin-top: 10em;
+}

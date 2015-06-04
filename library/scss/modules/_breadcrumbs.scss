@@ -1,0 +1,52 @@
+
+.breadcrumbs {
+	text-align: left;
+	z-index: 5;
+    position: relative;
+    padding: 0 1em;
+    background: #fff;
+    border-radius: 0 0 3px 3px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.4);
+    color: $text-color;
+
+    span {
+    	color: $text-color;
+    }
+
+	a:visited {
+		color: $text-color;
+	}
+
+	a:hover {
+		color: $text-color;
+	}
+
+	a:focus {
+		color: $text-color;	
+	}
+
+	a:visited:hover {
+		color: $text-color;
+	}
+
+	a:visited:focus {
+		color: $text-color;
+	}
+}
+
+.youhere {
+	padding: 1em 0.1em 1em 0;
+	display: block;
+	width: 90px;
+	float: left;
+	//box-shadow: 2px 1px 0 -1px rgba(255, 255, 255, 0.9);
+	color: $text-color;
+}
+
+.breadlist {
+	display: block;
+	float: left;
+	padding: 1em 0;
+	color: $text-color;
+}
+

@@ -1,0 +1,29 @@
+/******************************************************************
+Site Name: 
+Author: 
+
+Stylesheet: Super Large Monitor Stylesheet
+
+You can add some advanced styles here if you like. This kicks in
+on larger screens.
+
+******************************************************************/
+
+.wrap {
+  width: 1200px;
+}
+
+.description {
+	display: block;
+}
+
+article.featured-post {
+	width: 344px;
+  	float: left;
+  	display: block;
+  	margin: 2em;
+}
+
+li.sis_event_entry {
+  width: 558px;
+}
