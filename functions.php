@@ -75,7 +75,7 @@ add_action('nav_menu_css_class', 'add_current_nav_class', 10, 2 );
     global $post;
     
     // Getting the post type of the current post
-    $current_post_type = get_post_type_object(get_post_type($post->ID));
+    //$current_post_type = get_post_type_object(get_post_type($post->ID));
     /*$current_post_type_slug = $current_post_type->rewrite[slug];
       
     // Getting the URL of the menu item
@@ -234,7 +234,7 @@ function bones_register_sidebars() {
     'description' => __( 'The footer-bar sidebar.', 'strose' ),
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget' => '</div>',
-    'before_title' => '<h4 class="footer-wiget-title"><span class="dashicons dashicons-admin-generic"></span> ',
+    'before_title' => '<h4 class="footer-wiget-title">',
     'after_title' => '</h4>',
   ));
 

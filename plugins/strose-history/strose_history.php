@@ -73,3 +73,23 @@ function strose_history( $archive_template ) {
 
 add_filter( 'archive_template', 'strose_history' ) ;
 
+/*add_meta_box( $id, $title, $callback, $screen, $context,
+         $priority, $callback_args );*/
+
+
+function strose_history_meta_box() {
+	add_meta_box( 
+		'history_meta_box', 
+		'Date of History', 
+		'strose_history_meta_box_callback', 
+		'history', 
+		'side', 
+		'low'
+	);
+}
+
+add_action( 'add_meta_boxes', 'strose_history_meta_box' );
+
+function strose_history_meta_box_callback() {
+	
+}

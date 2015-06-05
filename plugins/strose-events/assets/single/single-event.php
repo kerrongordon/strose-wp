@@ -21,7 +21,7 @@
 
 				<div id="inner-content" class="wrap cf">
 
-						<main id="main" class="m-all t-2of3 d-5of7 aligncenter cf" role="main" itemscope itemprop="mainContentOfPage" >
+						<main id="main" class="m-all cf" role="main" itemscope itemprop="mainContentOfPage" >
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -31,24 +31,24 @@
 							
 							?>
 
-							<div class="featured-event m-all wow fadeInUp cf">
-								<a href="<?php the_permalink(); ?>">
-								<?php printf( __( ' %1$s', 'strose' ),				
-                       				'<time class="updated entry-time date-round date-round-big" datetime="' . date('y-m-d', $event_start_date) . '" itemprop="datePublished"> 
-                       				<span class="date-month"><abbr>' . date( 'M', $event_start_date) . '</abbr></span>
-                       				<span class="date-day">' . date( 'd', $event_start_date) . '</span>
-                       				</time>'
-                    			); ?></a>
-                    			<div class="event-detail">
-						          <a rel="external" href="<?php the_permalink(); ?>" data-element-location="Upcoming Event Link Clicks" data-link-type="href">
-						            <h4><?php echo substr(the_title('', '', FALSE), 0, 25); ?>...</h4>
-						          </a>
+							<div class="featured-event m-all wow fadeIn cf">
+								<div class="m-all t-1of3 d-2of7 cf">
+									
+									<?php printf( __( ' %1$s', 'strose' ),				
+	                       				'<time class="updated entry-time date-round date-round-big" datetime="' . date('y-m-d', $event_start_date) . '" itemprop="datePublished"> 
+	                       				<span class="date-month"><abbr>' . date( 'M', $event_start_date) . '</abbr></span>
+	                       				<span class="date-day">' . date( 'd', $event_start_date) . '</span>
+	                       				</time>'
+	                    			); ?>
+								</div>
+                    			<div class="event-detail m-all t-2of3 d-5of7 last-col cf">
+						            <h2><?php the_title(); ?></h2>   
 						          <time class="event-info" datetime="<?php get_the_time('y-m-d') ?>"><span class="dashicons dashicons-calendar-alt"></span> <?php kgp_get_date(); ?></time>
 						          <span class="event-info location">
 						            <p><span class="dashicons dashicons-location"></span> <?php echo get_post_meta( get_the_ID(), 'event-venue', true ); ?></p>
 						          </span>
 						          <div class="">
-						          	<p><i class="dashicons dashicons-admin-post"></i> <?php the_content(); ?></p>
+						          	<p><?php the_content(); ?></p>
 						          </div>
 						        </div>
 							</div>

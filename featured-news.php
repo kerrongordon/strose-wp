@@ -41,7 +41,7 @@
 				</div>
 
 				<header class="article-header">
-					<h1 class="h2 entry-title"><?php echo substr(the_title('', '', FALSE), 0, 15); ?>...</h1>				
+					<a href="<?php the_permalink(); ?>"><h1 class="h2 entry-title"><?php echo substr(the_title('', '', FALSE), 0, 15); ?>...</h1></a>				
 					<p class="byline entry-meta vcard">
 		                    <?php printf( __( 'Posted %1$s by %2$s', 'strose' ),
 		                    /* the time the post was published */
