@@ -23,7 +23,7 @@ function gallery__post_type() {
 		'label'               => __( 'gallery', 'strose_gallery' ),
 		'description'         => __( 'gallery', 'strose_gallery' ),
 		'labels'              => $labels,
-		'supports'            => array( 'title', 'editor', 'author', 'comments', 'post-formats', ),
+		'supports'            => array( 'title', 'editor', 'author', 'comments', 'post-formats', 'thumbnail' ),
 		'taxonomies'          => array( 'category', 'post_tag' ),
 		'hierarchical'        => false,
 		'public'              => true,
@@ -44,6 +44,20 @@ function gallery__post_type() {
 }
 
 // Hook into the 'init' action
-add_action( 'init', 'gallery__post_type', 0 );
+add_action( 'init', 'gallery__post_type');
+
+
+add_filter( 'option_default_post_format', 'custom_default_post_format' );
+
+function custom_default_post_format( $format ) {
+    global $post_type;
+
+    if( $post_type == 'gallery' ) {
+        $format = 'gallery';
+    }
+
+    return $format;
+}
+
 
 ?>

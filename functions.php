@@ -65,8 +65,6 @@ function bones_ahoy() {
 // let's get this party started
 add_action( 'after_setup_theme', 'bones_ahoy' );
 
-
-
 add_action('nav_menu_css_class', 'add_current_nav_class', 10, 2 );
   
   function add_current_nav_class($classes, $item) {

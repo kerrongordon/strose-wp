@@ -1,10 +1,8 @@
 
 
-              <article id="post-<?php the_ID(); ?>" class="cf" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+              <article id="post-<?php the_ID(); ?>" class="cf" role="article" itemscope >
 
                 <header class="article-header">
-
-                  <!--<h1 class="title-page" itemprop="headline"><?php //the_title(); ?></h1>-->
 
                 </header> <?php // end article header ?>
 
@@ -43,4 +41,4 @@
                 
 
               </article> <?php // end article ?>
-<?php comments_template(); ?>
+<?php //comments_template(); ?>

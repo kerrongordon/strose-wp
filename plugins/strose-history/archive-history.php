@@ -18,7 +18,7 @@
 
 				<div id="inner-content" class="wrap cf">
 
-						<main id="main" class="history-over m-all t-all d-all cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+						<main id="main" class="history-over m-all t-all d-all cf" role="main" itemscope itemprop="mainContentOfPage" >
 
 						<div class="fixlocal"></div>
 						<div class="history-line"></div>
@@ -39,23 +39,18 @@
 							<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 							
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'd-2of5 wow rotateInUpLeft cf' ); ?> role="article">
+							<article id="post-<?php the_ID(); ?>" <?php post_class( 'd-2of5 wow flipInX cf' ); ?> role="article" data-wow-delay="0.5s">
 
 								<div class="post-img">									
 									
 										<?php the_post_thumbnail( 'bones-thumb-900' ); ?> 										
-										<a type="button" href="<?php the_permalink() ?>" class="readmore-h "><span class="dashicons dashicons-archive"></span></a>
+										<a type="button" href="<?php the_permalink() ?>" class="readmore-h "><span class="dashicons dashicons-hammer"></span></a>
 									
 								</div>
 
 																	
 									<p class="byline entry-meta vcard date-card wow zoomIn">
-                                        				<?php printf( __( 'On %1$s', 'strose' ),
-                       								/* the time the post was published */
-                       								'<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . '</time>',
-                       								/* the author of the post */
-                       								'<span class="by">by</span> <span class="entry-author author" itemprop="author" itemscope itemptype="http://schema.org/Person">' . get_the_author_link( get_the_author_meta( 'ID' ) ) . '</span>'
-                    							); ?>
+                                        <?php the_title(); ?>
 									</p>
 
 

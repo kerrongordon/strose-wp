@@ -1012,6 +1012,7 @@ them however you see fit.
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   transition: all 0.5s ease-in-out;
   transform: scale(1);
+  height: 175px;
 }
 .single-format-gallery .entry-content img:hover {
   transform: scale(1.1);
@@ -1020,8 +1021,21 @@ them however you see fit.
   border-top: 1px solid rgba(248, 249, 250, 0.19);
 }
 
-.post-type-archive-gallery {
+.post-type-archive-gallery,
+.single-format-gallery {
   background-color: #2b2b2b;
+}
+.post-type-archive-gallery .subscription, .post-type-archive-gallery .footerbar, .post-type-archive-gallery .footer,
+.single-format-gallery .subscription,
+.single-format-gallery .footerbar,
+.single-format-gallery .footer {
+  background: transparent;
+}
+.post-type-archive-gallery #comment, .post-type-archive-gallery input,
+.single-format-gallery #comment,
+.single-format-gallery input {
+  border-color: rgba(255, 255, 255, 0);
+  background: rgba(255, 255, 255, 0.29804);
 }
 
 .single-format-video {
@@ -1055,49 +1069,14 @@ them however you see fit.
 }
 
 .gallery-archive {
-  width: 375px;
   text-align: center;
-  position: relative;
   padding: 2em 0;
-}
-.gallery-archive .gallery-item:nth-child(1) {
-  position: relative;
-  transform: rotate(10deg);
-  margin: 0 auto;
-  float: none;
-}
-.gallery-archive .gallery-item:nth-last-child(5) {
-  transform: rotate(30deg);
-}
-.gallery-archive .gallery-item:nth-last-child(4) {
-  transform: rotate(-30deg);
-}
-.gallery-archive .gallery-item:nth-last-child(3) {
-  transform: rotate(20deg);
-}
-.gallery-archive .gallery-item:nth-last-child(2) {
-  transform: rotate(-20deg);
-}
-.gallery-archive .gallery {
-  position: relative;
-}
-.gallery-archive .gallery-item {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 60px;
-}
-.gallery-archive img {
-  width: 200px;
 }
 
 .covercontent {
   display: block;
-  position: absolute;
   top: 0;
   bottom: 0;
-  width: 100%;
   z-index: 10;
   left: -10px;
   cursor: pointer;
@@ -1125,15 +1104,7 @@ them however you see fit.
 }
 .post-type-archive-history .type-history:nth-child(odd) .post-img {
   float: left;
-  margin: 25% -129px;
-  background: #fff;
-  position: relative;
-  width: 129px;
-  height: 5px;
-  text-align: left;
-  border-top: solid 1px #e5e5e5;
-  border-bottom: solid 1px #e5e5e5;
-  border-left: solid 1px #e5e5e5;
+  margin: 0% -131px;
 }
 .post-type-archive-history .type-history:nth-child(odd) .post-img span {
   margin: -20px -10px;
@@ -1145,34 +1116,26 @@ them however you see fit.
 }
 .post-type-archive-history .type-history:nth-child(even) .post-img {
   float: right;
-  margin: 25% -146px;
-  background: #fff;
-  position: relative;
-  width: 136px;
-  height: 5px;
-  text-align: right;
-  border-top: solid 1px #e5e5e5;
-  border-bottom: solid 1px #e5e5e5;
-  border-right: solid 1px #e5e5e5;
+  margin: 0% -142px;
 }
 .post-type-archive-history .type-history:nth-child(even) .post-img span {
   margin: -20px 10px;
   font-size: 3em;
 }
 .post-type-archive-history .fixlocal {
-  width: 50px;
-  height: 50px;
-  background: #BB3939;
+  width: 25px;
+  height: 25px;
+  background: #ee6e73;
   border-radius: 50%;
   position: fixed;
   top: 50%;
-  left: 50%;
+  left: 50.57%;
   margin-left: -20px;
 }
 .post-type-archive-history .history-line {
   position: absolute;
   height: 100%;
-  width: 10px;
+  width: 2px;
   background: #ee6e73;
   z-index: 0;
   left: 50%;
@@ -1779,6 +1742,7 @@ LAYOUT & GRID STYLES
 .wrap {
   width: 96%;
   margin: 0 auto;
+  transition: all 0.5s ease;
 }
 
 /*********************

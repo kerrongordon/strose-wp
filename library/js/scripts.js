@@ -137,7 +137,7 @@ jQuery(document).ready(function($) {
   var headerBar = $('.header');
 
     $(window).bind('scroll', function() {
-        if ($(window).scrollTop() > 106 ) {
+        if ($(window).scrollTop() > $('.bread-crumb').height() ) {
             headerBar.addClass('menuTop');
          }
         else {
@@ -151,7 +151,15 @@ jQuery(document).ready(function($) {
 
   $('.featured-post').click(function(){
     window.location=$(this).find('a').attr('href'); return false;
-    console.log('click article');
   });
+
+  $('article.gallery-archive').click(function(){
+    window.location=$(this).find('a').attr('href'); return false;
+  });
+
+  $('.gallery-item').addClass('m-all t-1of2 d-1of3 cf');
+
+  
+
 
 }); /* end of as page load scripts */
