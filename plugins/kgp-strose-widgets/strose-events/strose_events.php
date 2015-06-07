@@ -1,18 +1,4 @@
 <?php
-/**
- * Plugin Name: St Rose Events
- * Plugin URI: http://URI_Of_Page_Describing_Plugin_and_Updates
- * Description: A brief description of the plugin.
- * Version: 1.0
- * Author: Kerron Gordon
- * Author URI: http://URI_Of_The_Plugin_Author
- * Text Domain: Optional. Plugin's text domain for localization. Example: mytextdomain
- * Domain Path: Optional. Plugin's relative directory path to .mo files. Example: /locale/
- * Network: Optional. Whether the plugin can only be activated network wide. Example: true
- * License: GPL2
- */
-
-
 
 	// Register Custom Post Type
 	function custom_post_events() {
@@ -275,3 +261,4 @@ class event_post_widget extends WP_Widget {
 		$this->WP_Widget( 'event_post_widget', __( 'Content Block', 'event-post-widget' ), $widget_ops );
 	}
 }
+

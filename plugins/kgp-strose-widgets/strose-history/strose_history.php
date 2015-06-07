@@ -1,16 +1,4 @@
 <?php
-/**
- * Plugin Name: St Rose History
- * Plugin URI: http://URI_Of_Page_Describing_Plugin_and_Updates
- * Description: A brief description of the plugin.
- * Version: 1.0
- * Author: Kerron Gordon
- * Author URI: http://URI_Of_The_Plugin_Author
- * Text Domain: Optional. Plugin's text domain for localization. Example: mytextdomain
- * Domain Path: Optional. Plugin's relative directory path to .mo files. Example: /locale/
- * Network: Optional. Whether the plugin can only be activated network wide. Example: true
- * License: GPL2
- */
 
 // Register Custom Post Type
 function history_post_type() {
@@ -73,23 +61,3 @@ function strose_history( $archive_template ) {
 
 add_filter( 'archive_template', 'strose_history' ) ;
 
-/*add_meta_box( $id, $title, $callback, $screen, $context,
-         $priority, $callback_args );*/
-
-
-function strose_history_meta_box() {
-	add_meta_box( 
-		'history_meta_box', 
-		'Date of History', 
-		'strose_history_meta_box_callback', 
-		'history', 
-		'side', 
-		'low'
-	);
-}
-
-add_action( 'add_meta_boxes', 'strose_history_meta_box' );
-
-function strose_history_meta_box_callback() {
-	
-}

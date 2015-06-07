@@ -70,7 +70,7 @@
 						                    			); ?></a>
 						                    			<div class="event-detail t-c">
 												          <a rel="external" href="<?php the_permalink(); ?>" data-element-location="Upcoming Event Link Clicks" data-link-type="href">
-												            <h4><?php echo substr(the_title('', '', FALSE), 0, 25); ?>...</h4>
+												            <h3><?php echo substr(the_title('', '', FALSE), 0, 25); ?>...</h3>
 												          </a>
 												          <time class="event-info" datetime="<?php get_the_time('y-m-d') ?>"><span class="dashicons dashicons-calendar-alt"></span> <?php kgp_get_date(); ?></time>
 												          <span class="event-info location">

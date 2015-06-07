@@ -1,3 +1,7 @@
+<?php 
+
+function kgp_strose_event_plugin() { ?>
+
 <div class="sub-h-full cf">
 
 	<div id="content">
@@ -40,7 +44,7 @@
 							$event_start_date = get_post_meta( get_the_ID(), 'event-start-date', true );
 							$event_end_date = get_post_meta( get_the_ID(), 'event-end-date', true );
 							$event_venue = get_post_meta( get_the_ID(), 'event-venue', true );
-							$event_image= wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
+							//$event_image= wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
 						?>
 							
 							<div class="featured-event m-all d-1of3 cf">
@@ -78,3 +82,5 @@
 	</div>
 
 </div>
+
+<?php } ?>

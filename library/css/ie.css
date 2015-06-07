@@ -533,6 +533,10 @@ li.sis_event_entry {
   width: 338px;
 }
 
+.goBlink {
+  display: inline;
+}
+
 /******************************************************************
 Site Name:
 Author:

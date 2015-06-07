@@ -30,7 +30,7 @@ function bones_ahoy() {
   // USE THIS TEMPLATE TO CREATE CUSTOM POST TYPES EASILY
   //require_once( 'library/custom-post-type.php' );
 
-  require_once( 'library/gallery.php' );
+  //require_once( 'library/gallery.php' );
 
   // launching operation cleanup
   add_action( 'init', 'bones_head_cleanup' );
@@ -106,6 +106,7 @@ add_image_size( 'bones-thumb-900', 900, 350, true );
 add_image_size( 'bones-thumb-600', 600, 150, true );
 add_image_size( 'bones-thumb-450', 450, 175, true );
 add_image_size( 'bones-thumb-300', 300, 100, true );
+add_image_size( 'bones-thumb-200', 200, 200, true );
 
 /*
 to add more sizes, simply copy a line from above

@@ -157,9 +157,5 @@ jQuery(document).ready(function($) {
     window.location=$(this).find('a').attr('href'); return false;
   });
 
-  $('.gallery-item').addClass('m-all t-1of2 d-1of3 cf');
-
-  
-
 
 }); /* end of as page load scripts */

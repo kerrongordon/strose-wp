@@ -44,7 +44,7 @@
 								<div class="post-img">									
 									
 										<?php the_post_thumbnail( 'bones-thumb-900' ); ?> 										
-										<a type="button" href="<?php the_permalink() ?>" class="readmore-h "><span class="dashicons dashicons-hammer"></span></a>
+										<a type="button" href="<?php the_permalink() ?>" class="readmore-h "><span class="dashicons dashicons-arrow-left-alt2"></span></a>
 									
 								</div>
 

@@ -6,6 +6,8 @@
 
 						<main id="main" class="m-all cf" role="main" itemscope itemprop="mainContentOfPage" >
 
+							<h1 class="title-page">Gallery</h1>
+
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 								<article id="post-<?php the_ID(); ?>" class="gallery-archive covercontent m-all t-1of2 d-1of3 cf" role="article">

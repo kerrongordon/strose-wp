@@ -41,9 +41,18 @@
 
 				<div id="inner-content" class="wrap cf">
 
-					<main id="main" class="m-all t-4of5 d-5of7 cf c-h-content" role="main" itemscope itemprop="mainContentOfPage">
+					<main id="main" class="cf" role="main" itemscope itemprop="mainContentOfPage">
 
-							<?php get_sidebar( "homepage2" ); ?>
+							<?php //get_sidebar( "homepage2" ); ?>
+							<?php 
+
+								if (function_exists('kgp_strose_gallery_plugin')) {
+									kgp_strose_gallery_plugin();
+								} else {
+									echo "not found";
+								}
+
+							?>	
 
 					</main>					
 
@@ -53,6 +62,14 @@
 
 		</div>
 
-		<?php include 'upcoming-events.php'; ?>	
+		<?php 
+
+			if (function_exists('kgp_strose_event_plugin')) {
+				kgp_strose_event_plugin();
+			} else {
+				echo "not found";
+			}
+
+		?>	
 
 <?php get_footer(); ?>

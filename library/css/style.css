@@ -746,6 +746,10 @@ them however you see fit.
     padding-right: 0.75em;
     width: 75%;
   }
+
+  .hide-m {
+    display: none;
+  }
 }
 /* Portrait tablet to landscape */
 @media (min-width: 768px) and (max-width: 1029px) {
@@ -1012,7 +1016,7 @@ them however you see fit.
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   transition: all 0.5s ease-in-out;
   transform: scale(1);
-  height: 175px;
+  padding: 0;
 }
 .single-format-gallery .entry-content img:hover {
   transform: scale(1.1);
@@ -1029,13 +1033,18 @@ them however you see fit.
 .single-format-gallery .subscription,
 .single-format-gallery .footerbar,
 .single-format-gallery .footer {
-  background: transparent;
+  background: #383838;
 }
 .post-type-archive-gallery #comment, .post-type-archive-gallery input,
 .single-format-gallery #comment,
 .single-format-gallery input {
   border-color: rgba(255, 255, 255, 0);
   background: rgba(255, 255, 255, 0.29804);
+}
+.post-type-archive-gallery .bread-crumb, .post-type-archive-gallery .subscription,
+.single-format-gallery .bread-crumb,
+.single-format-gallery .subscription {
+  display: none;
 }
 
 .single-format-video {
@@ -1064,6 +1073,16 @@ them however you see fit.
   height: 100%;
 }
 
+.goBack {
+  font-size: 3em;
+  margin: 1.8em 0 -1.8em;
+}
+
+.goBlink {
+  margin: 6em 2em;
+  position: absolute;
+}
+
 .gallery dl {
   float: left;
 }
@@ -1071,6 +1090,10 @@ them however you see fit.
 .gallery-archive {
   text-align: center;
   padding: 2em 0;
+}
+
+.gallery-item {
+  transition: all .5s ease;
 }
 
 .covercontent {
@@ -1145,6 +1168,19 @@ them however you see fit.
   font-size: 1.5em;
   text-align: center;
   padding-top: 20px;
+}
+
+.img-round img {
+  border-radius: 50%;
+}
+
+.h-img-round img {
+  width: 150px;
+  height: 150px;
+}
+
+article img {
+  max-width: 100%;
 }
 
 /*********************
@@ -2724,6 +2760,10 @@ article.featured-post .readmore {
   background-color: #fff;
 }
 
+.goBlink {
+  display: none;
+}
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
@@ -3107,6 +3147,10 @@ you can add resource intensive styles.
   li.sis_event_entry {
     float: left;
     width: 338px;
+  }
+
+  .goBlink {
+    display: inline;
   }
 }
 /*********************
