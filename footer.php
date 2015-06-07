@@ -34,7 +34,7 @@
 		<?php wp_footer(); ?>
 		
 		<script>
- 			new WOW().init();
+ 			//new WOW().init();
 		</script>
 
 	</body>

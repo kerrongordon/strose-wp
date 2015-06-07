@@ -1170,13 +1170,65 @@ them however you see fit.
   padding-top: 20px;
 }
 
+.img-round {
+  display: block;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: 2em auto;
+}
 .img-round img {
   border-radius: 50%;
+}
+
+.round-test {
+  display: block;
+  position: absolute;
+  top: 80%;
+  left: 0;
+  bottom: 0;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding-top: 5.5em;
+  transition: all 0.4s ease-in-out;
+}
+.round-test a {
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+}
+.round-test a h1 {
+  line-height: 1.5em;
+  transition: all 0.4s ease-in-out;
 }
 
 .h-img-round img {
   width: 150px;
   height: 150px;
+  transition: all 0.4s ease-in-out;
+}
+.h-img-round img:hover {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+}
+
+.img-round:hover img {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+}
+.img-round:hover .round-test {
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.47);
+}
+.img-round:hover .round-test a h1 {
+  line-height: 7.5em;
+  color: #fff;
 }
 
 article img {
