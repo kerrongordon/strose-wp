@@ -1283,14 +1283,6 @@ article.featured-post {
 .bread_crumb li.current {
 }
 
-.fixlocal, .history-line, .post-img {
-	display: none;
-}
-
-.post-type-archive-history .type-history:nth-child(odd) {
-	margin-top: 0;
-}
-
 .logged-in {
 
 	.header {
@@ -1316,13 +1308,14 @@ article.featured-post {
     margin: 0 1em 0 0;
     font-size: 1.1em;
     border: solid 5px #fff;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.04);
-    transition: all 0.3s ease-in-out;
+    box-shadow: inset 0 0 0 0px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease-in-out;
 
     &:hover {
     	background-color: #ee6e73;
   		cursor: pointer;
   		border: solid 5px #ee6e73;
+  		box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 0.5);
     }
 
   	abbr {

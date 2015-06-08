@@ -16,7 +16,7 @@ function kgp_strose_gallery_plugin() {
 		<div class="m-all t-1of2 d-1of4 t-c cf">
    			<span class="img-round h-img-round">
    				<?php the_post_thumbnail( 'bones-thumb-200' ); ?>
-               <span class="round-test"><a href="<?php the_permalink(); ?>"><h1 class="h2 entry-title"><?php echo substr(the_title('', '', FALSE), 0, 15); ?>...</h1></a></span>
+               <span class="round-test"><a href="<?php the_permalink(); ?>"><h1 class="h3 entry-title"><?php echo substr(the_title('', '', FALSE), 0, 20); ?></h1></a></span>
    			</span>
    		</div>
 

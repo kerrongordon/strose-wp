@@ -1109,65 +1109,17 @@ them however you see fit.
   background: rgba(240, 248, 255, 0.1);
 }
 
-.post-type-archive-history {
-  background: #fdf6e3;
+.page-template-page-history .title-page {
+  background-color: #fff;
+  padding: 1em 0 1em 0;
+  margin: 0;
 }
-.post-type-archive-history #main {
-  position: relative;
+.page-template-page-history .bread-crumb {
+  display: none;
 }
-.post-type-archive-history .entry-content p {
-  font-size: 15px;
-}
-.post-type-archive-history .type-history:nth-child(1) {
-  margin-top: 0;
-}
-.post-type-archive-history .type-history:nth-child(odd) {
-  float: right;
-  margin-top: 10em;
-}
-.post-type-archive-history .type-history:nth-child(odd) .post-img {
-  float: left;
-  margin: 0% -131px;
-}
-.post-type-archive-history .type-history:nth-child(odd) .post-img span {
-  margin: -20px -10px;
-  font-size: 3em;
-}
-.post-type-archive-history .type-history:nth-child(even) {
-  float: left;
-  clear: both;
-}
-.post-type-archive-history .type-history:nth-child(even) .post-img {
-  float: right;
-  margin: 0% -142px;
-}
-.post-type-archive-history .type-history:nth-child(even) .post-img span {
-  margin: -20px 10px;
-  font-size: 3em;
-}
-.post-type-archive-history .fixlocal {
-  width: 25px;
-  height: 25px;
-  background: #ee6e73;
-  border-radius: 50%;
-  position: fixed;
-  top: 50%;
-  left: 50.57%;
-  margin-left: -20px;
-}
-.post-type-archive-history .history-line {
-  position: absolute;
-  height: 100%;
-  width: 2px;
-  background: #ee6e73;
-  z-index: 0;
-  left: 50%;
-}
-.post-type-archive-history .date-card {
-  position: relative;
-  font-size: 1.5em;
-  text-align: center;
-  padding-top: 20px;
+.page-template-page-history .subscription, .page-template-page-history .footerbar {
+  background: #fff;
+  color: #5c6b80;
 }
 
 .img-round {
@@ -1227,7 +1179,7 @@ them however you see fit.
   background-color: rgba(0, 0, 0, 0.47);
 }
 .img-round:hover .round-test a h1 {
-  line-height: 7.5em;
+  line-height: 11.5em;
   color: #fff;
 }
 
@@ -2724,14 +2676,6 @@ article.featured-post .readmore {
   color: #787878;
 }
 
-.fixlocal, .history-line, .post-img {
-  display: none;
-}
-
-.post-type-archive-history .type-history:nth-child(odd) {
-  margin-top: 0;
-}
-
 .logged-in .header {
   margin-top: 31px;
 }
@@ -2752,13 +2696,14 @@ article.featured-post .readmore {
   margin: 0 1em 0 0;
   font-size: 1.1em;
   border: solid 5px #fff;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.04);
-  transition: all 0.3s ease-in-out;
+  box-shadow: inset 0 0 0 0px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease-in-out;
 }
 .date-round:hover {
   background-color: #ee6e73;
   cursor: pointer;
   border: solid 5px #ee6e73;
+  box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 0.5);
 }
 .date-round abbr {
   display: block;

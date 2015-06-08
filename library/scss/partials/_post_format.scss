@@ -110,76 +110,21 @@
 	}
 }
 
-.post-type-archive-history {
-	background: #fdf6e3;
+.page-template-page-history {
 
-	#main {
-		position: relative;
+	.title-page {
+		background-color: #fff;
+		padding: 1em 0 1em 0;
+		margin: 0;
 	}
 
-	.entry-content p {
-		font-size: 15px;
+	.bread-crumb {
+		display: none;
 	}
 
-	.type-history:nth-child(1) {
-		margin-top: 0;
-	}
-
-	.type-history:nth-child(odd) {
-		float: right;
-		margin-top: 10em;
-
-		.post-img {
-			float: left;
-			margin: 0% -131px;
-
-			span {
-				margin: -20px -10px;
-  				font-size: 3em;
-			}
-		}
-	}
-
-	.type-history:nth-child(even) {
-		float: left;
-		clear: both;
-
-		.post-img {
-			float: right;
-			margin: 0% -142px;
-
-			span {
-				margin: -20px 10px;
-  				font-size: 3em;
-			}
-		}
-	}
-
-	.fixlocal {
-		width: 25px;
-		height: 25px;
-		background: $red;
-		border-radius: 50%;
-		position: fixed;
-		top: 50%;
-		left: 50.57%;
-		margin-left: -20px;
-	}
-
-	.history-line {
-		position: absolute;
-  		height: 100%;
-  		width: 2px;
-  		background: $red;
-  		z-index: 0;
-  		left: 50%;
-	}
-
-	.date-card {
-		position: relative;
-  		font-size: 1.5em;
-  		text-align: center;
-  		padding-top: 20px;
+	.subscription, .footerbar {
+		background: #fff;
+		color: $text-color;
 	}
 }
 
@@ -246,7 +191,7 @@
 			background-color: rgba(0, 0, 0, 0.47);
 
 			a {
-				h1 {line-height: 7.5em; color: #fff;}
+				h1 {line-height: 11.5em; color: #fff;}
 			}
 		}
 	}

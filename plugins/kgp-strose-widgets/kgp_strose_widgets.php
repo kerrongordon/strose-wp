@@ -14,8 +14,6 @@
 
 	include 'strose-events/strose_events.php';
 
-	include 'strose-history/strose_history.php';
-
 	include 'strose-gallery/strose-gallery.php';
 
 	include 'strose-events/upcoming-events.php';
