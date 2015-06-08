@@ -81,6 +81,93 @@ function strose_single_archive($single_template) {
 }
 add_filter( 'single_template', 'strose_single_archive' );
 
+
+if ( ! function_exists( 'kgp_stroes_gallery_cat_taxonomy' ) ) {
+
+// Register Custom Taxonomy
+function kgp_stroes_gallery_cat_taxonomy() {
+
+	$labels = array(
+		'name'                       => _x( 'Categories', 'Taxonomy General Name', 'strose' ),
+		'singular_name'              => _x( 'Categorie', 'Taxonomy Singular Name', 'strose' ),
+		'menu_name'                  => __( 'Categories', 'strose' ),
+		'all_items'                  => __( 'All Categories', 'strose' ),
+		'parent_item'                => __( 'Parent Categorie', 'strose' ),
+		'parent_item_colon'          => __( 'Parent Categorie:', 'strose' ),
+		'new_item_name'              => __( 'New Item Name', 'strose' ),
+		'add_new_item'               => __( 'Add New Categorie', 'strose' ),
+		'edit_item'                  => __( 'Edit Categorie', 'strose' ),
+		'update_item'                => __( 'Update Categories', 'strose' ),
+		'view_item'                  => __( 'View Categorie', 'strose' ),
+		'separate_items_with_commas' => __( 'Separate Categories with commas', 'strose' ),
+		'add_or_remove_items'        => __( 'Add or remove Categories', 'strose' ),
+		'choose_from_most_used'      => __( 'Choose from the most used', 'strose' ),
+		'popular_items'              => __( 'Popular Categories', 'strose' ),
+		'search_items'               => __( 'Search Categories', 'strose' ),
+		'not_found'                  => __( 'Categorie Not Found', 'strose' ),
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => true,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => true,
+	);
+	register_taxonomy( 'taxonomy_cate', array( 'gallery' ), $args );
+
+}
+
+// Hook into the 'init' action
+add_action( 'init', 'kgp_stroes_gallery_cat_taxonomy', 0 );
+
+}
+
+
+if ( ! function_exists( 'kgp_stroes_gallery_tags_taxonomy' ) ) {
+
+// Register Custom Taxonomy
+function kgp_stroes_gallery_tags_taxonomy() {
+
+	$labels = array(
+		'name'                       => _x( 'Tags', 'Taxonomy General Name', 'strose' ),
+		'singular_name'              => _x( 'Tag', 'Taxonomy Singular Name', 'strose' ),
+		'menu_name'                  => __( 'Tags', 'strose' ),
+		'all_items'                  => __( 'All Tags', 'strose' ),
+		'parent_item'                => __( 'Parent Tag', 'strose' ),
+		'parent_item_colon'          => __( 'Parent Tag:', 'strose' ),
+		'new_item_name'              => __( 'New Tag Name', 'strose' ),
+		'add_new_item'               => __( 'Add New Tag', 'strose' ),
+		'edit_item'                  => __( 'Edit Tag', 'strose' ),
+		'update_item'                => __( 'Update Tags', 'strose' ),
+		'view_item'                  => __( 'View Tag', 'strose' ),
+		'separate_items_with_commas' => __( 'Separate Tags with commas', 'strose' ),
+		'add_or_remove_items'        => __( 'Add or remove Tags', 'strose' ),
+		'choose_from_most_used'      => __( 'Choose from the most used Tags', 'strose' ),
+		'popular_items'              => __( 'Popular Tags', 'strose' ),
+		'search_items'               => __( 'Search Tags', 'strose' ),
+		'not_found'                  => __( 'Tag Not Found', 'strose' ),
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => true,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => true,
+	);
+	register_taxonomy( 'taxonomy_tags', array( 'gallery' ), $args );
+
+}
+
+// Hook into the 'init' action
+add_action( 'init', 'kgp_stroes_gallery_tags_taxonomy', 1 );
+
+}
+
+// include gallery loop for home page 
 include 'home-gallery.php';
 
 ?>

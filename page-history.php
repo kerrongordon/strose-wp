@@ -15,26 +15,26 @@
 
 <?php get_header(); ?>
 
-						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-							<h1 class="title-page"><?php the_title();?></h1>
+		<h1 class="title-page"><?php the_title();?></h1>
 
-							<?php the_content(); ?>							
+		<?php the_content(); ?>							
 
-							<?php endwhile; else : ?>
+	<?php endwhile; else : ?>
 
-									<article id="post-not-found" class="hentry cf wow fadeInUp">
-										<header class="article-header">
-											<h1><?php _e( 'Oops, Post Not Found!', 'strose' ); ?></h1>
-										</header>
-										<section class="entry-content">
-											<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'strose' ); ?></p>
-										</section>
-										<footer class="article-footer">
-												<p><?php _e( 'This is the error message in the page.php template.', 'strose' ); ?></p>
-										</footer>
-									</article>
-
-							<?php endif; ?>
+		<article id="post-not-found" class="hentry cf wow fadeInUp">
+			<header class="article-header">
+				<h1><?php _e( 'Oops, Post Not Found!', 'strose' ); ?></h1>
+			</header>
+			<section class="entry-content">
+				<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'strose' ); ?></p>
+			</section>
+			<footer class="article-footer">
+				<p><?php _e( 'This is the error message in the page.php template.', 'strose' ); ?></p>
+			</footer>
+		</article>
+		
+	<?php endif; ?>
 
 <?php get_footer(); ?>

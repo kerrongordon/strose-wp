@@ -30,8 +30,6 @@ function bones_ahoy() {
   // USE THIS TEMPLATE TO CREATE CUSTOM POST TYPES EASILY
   //require_once( 'library/custom-post-type.php' );
 
-  //require_once( 'library/gallery.php' );
-
   // launching operation cleanup
   add_action( 'init', 'bones_head_cleanup' );
   // A better title
@@ -132,8 +130,8 @@ add_filter( 'image_size_names_choose', 'bones_custom_image_sizes' );
 
 function bones_custom_image_sizes( $sizes ) {
     return array_merge( $sizes, array(
-        'bones-thumb-600' => __('600px by 150px'),
-        'bones-thumb-300' => __('300px by 100px'),
+        'bones-thumb-600' => __('600px by 150px', 'strose'),
+        'bones-thumb-300' => __('300px by 100px', 'strose'),
     ) );
 }
 
@@ -354,6 +352,5 @@ add_action('wp_enqueue_scripts', 'bones_fonts');
 		'search-form',
 		'comment-form'
 	) );
-
-/* DON'T DELETE THIS CLOSING TAG */ ?>
+?>
 

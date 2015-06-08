@@ -1187,6 +1187,11 @@ article img {
   max-width: 100%;
 }
 
+.srp-thumbnail-box img {
+  height: auto;
+  border-radius: 50%;
+}
+
 /*********************
 IMPORTING MODULES
 Modules are reusable blocks or elements we use throughout the project.

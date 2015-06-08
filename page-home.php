@@ -49,7 +49,7 @@
 								if (function_exists('kgp_strose_gallery_plugin')) {
 									kgp_strose_gallery_plugin();
 								} else {
-									echo "not found";
+									echo '<div class="no-widgets"><h2>St. Rose Gallery widget is not install</h2></div>';
 								}
 
 							?>	
@@ -67,7 +67,7 @@
 			if (function_exists('kgp_strose_event_plugin')) {
 				kgp_strose_event_plugin();
 			} else {
-				echo "not found";
+				echo '<div class="no-widgets"><h2>St. Rose Event wifget is not install</h2></div>';
 			}
 
 		?>	
