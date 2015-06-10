@@ -10,7 +10,7 @@
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-								<article id="post-<?php the_ID(); ?>" class="gallery-archive covercontent m-all t-1of2 d-1of3 cf" role="article">
+								<article id="post-<?php the_ID(); ?>" class="gallery-archive covercontent m-all t-1of2 d-1of3 cf wow zoomIn" role="article">
 									<a href="<?php the_permalink(); ?>"></a>
 
 									<header class="entry-header article-header">

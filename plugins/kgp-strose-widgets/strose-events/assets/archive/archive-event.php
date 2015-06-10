@@ -60,7 +60,7 @@
 													$event_image= wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
 												?>
 													
-													<div id="post-<?php the_ID(); ?>" class="featured-event m-all t-1of2 d-1of3 cf wow fadeInUp">
+													<div id="post-<?php the_ID(); ?>" class="featured-event m-all t-1of2 d-1of3 cf wow zoomIn">
 														<a href="<?php the_permalink(); ?>">
 														<?php printf( __( ' %1$s', 'strose' ),				
 						                       				'<time class="updated entry-time date-round date-round-big" datetime="' . date('y-m-d', $event_start_date) . '" itemprop="datePublished"> 

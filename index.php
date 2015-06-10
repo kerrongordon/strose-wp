@@ -8,7 +8,7 @@
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> data-wow-delay="<?php echo($wp_query->current_post + 1); ?>00ms" role="article">
+							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf wow fadeInUp' ); ?> data-wow-delay="<?php echo($wp_query->current_post + 1); ?>00ms" role="article">
 
 								<div class="post-img">									
 									<?php if ( has_post_thumbnail() ) {

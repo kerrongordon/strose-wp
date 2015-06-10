@@ -23,7 +23,7 @@
 
 						<main id="main" class="m-all t-2of3 d-5of7 aligncenter cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 						
-							<div class="wow fadeInLeft">
+							<div class="wow fadeIn">
 								<?php echo do_shortcode( '[contact-form-7 id="165" title="Contact form 1"]' ); ?>
 
 							</div>

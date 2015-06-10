@@ -6,6 +6,10 @@ alt="thumbnail" />
 
 [All In One SEO Pack](https://wordpress.org/plugins/all-in-one-seo-pack/)
 
+[Responsive Menu](https://wordpress.org/plugins/responsive-menu/)
+
+[Current Menu Item for Custom Post Types](https://wordpress.org/plugins/current-menu-item-for-custom-post-types/)
+
 [Better WordPress Recent Comments](https://wordpress.org/plugins/bwp-recent-comments/)
 
 [Cleaner Gallery](https://wordpress.org/plugins/cleaner-gallery/)

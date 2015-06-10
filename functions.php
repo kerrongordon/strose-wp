@@ -246,22 +246,12 @@ function bones_register_sidebars() {
   ));
 
   register_sidebar(array(
-    'id' => 'homepage2',
-    'name' => __( 'Home page main content two', 'strose' ),
-    'description' => __( 'The footer-bar sidebar.', 'strose' ),
-    'before_widget' => '<div id="%1$s" class="widget %2$s">',
-    'after_widget' => '</div>',
-    'before_title' => '<h2 class="">',
-    'after_title' => '</h2>',
-  ));
-
-  register_sidebar(array(
     'id' => 'dailymessage',
     'name' => __( 'Home page daily message', 'strose' ),
     'description' => __( 'The footer-bar sidebar.', 'strose' ),
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget' => '</div>',
-    'before_title' => '<h2 class="wow zoomIn">&#8220',
+    'before_title' => '<h2 class="wow fadeIn">&#8220',
     'after_title' => '&#8221</h2>',
   ));
 

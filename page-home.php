@@ -43,7 +43,6 @@
 
 					<main id="main" class="cf" role="main" itemscope itemprop="mainContentOfPage">
 
-							<?php //get_sidebar( "homepage2" ); ?>
 							<?php 
 
 								if (function_exists('kgp_strose_gallery_plugin')) {
